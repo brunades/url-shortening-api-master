@@ -72,14 +72,14 @@
   padding: 1.3rem;
   border-radius: 10px;
   background-color: $dark-violet;
-  background-image: url(/dist/images/bg-shorten-mobile.svg);
+  background-image: url(/images/bg-shorten-mobile.svg);
   background-repeat: no-repeat;
   background-position: right 0;
 
   @include mediaQuery($breakpoint-desktop){
     grid-area: form;
     flex-direction: row;
-    background-image: url(/dist/images/bg-shorten-desktop.svg);
+    background-image: url(/images/bg-shorten-desktop.svg);
     margin: 1rem 9.5rem;
     height: 9.5rem;
     padding: 3rem 3rem;

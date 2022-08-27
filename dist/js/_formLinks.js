@@ -1,6 +1,5 @@
 const copyToClipboard = (btn) => {
   navigator.clipboard.writeText(btn.previousElementSibling.innerHTML);
-  console.log(btn.previousElementSibling.innerHTML);
 }
 
 const setCopied = (btn) => {

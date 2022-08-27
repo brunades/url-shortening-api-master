@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/brunades/url-shortening-api-master)
-- Live Site URL: [Add live site URL here](https://url-shortening-api-brunades.netlify.app/)
+- Solution URL: [https://github.com/brunades/url-shortening-api-master](https://github.com/brunades/url-shortening-api-master)
+- Live Site URL: [https://url-shortening-api-brunades.netlify.app/](https://url-shortening-api-brunades.netlify.app/)
 
 ## My process
 

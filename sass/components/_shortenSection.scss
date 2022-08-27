@@ -1,0 +1,63 @@
+@use '../base' as *;
+
+.form-links {
+  background-color: lighten($color: $dark-violet, $amount: 70);
+  padding: 6.4rem 0 4rem;
+  margin-top: -5rem;
+
+  @include mediaQuery($breakpoint-desktop){
+    margin-top: -24rem;
+  }
+}
+
+.single-link {
+  @include flexColumn;
+  background-color: #ffffff;
+  border-radius: 0.3rem;
+  margin: 0 1.5rem 1.4rem;
+  padding: 0.8rem 0rem;
+  text-align: left;
+  font-size: 0.85rem;
+
+  @include mediaQuery($breakpoint-desktop){
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 9.5rem 1rem;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    font-size: 0.8rem;
+    margin: 0 0.8rem;
+
+    @include mediaQuery($breakpoint-desktop){
+      padding: 0.5rem 1.4rem;
+    }
+  }
+}
+
+.full-link {
+  color: $very-dark-blue;
+  border-bottom: 0.1rem solid lighten($color: $gray, $amount: 18);
+  padding: 0 0.8rem 0.5rem;
+  word-wrap: break-word;
+
+  @include mediaQuery($breakpoint-desktop){
+    border-bottom: 0;
+    padding: 0;
+    flex: 1;
+  }
+}
+
+.short-link {
+  color: $cyan;
+  padding: 0.5rem 0.8rem;
+
+  @include mediaQuery($breakpoint-desktop){
+    padding: 0;
+  }
+}

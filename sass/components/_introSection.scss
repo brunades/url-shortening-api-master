@@ -1,0 +1,133 @@
+@use '../base' as *;
+
+.intro {
+  @include mediaQuery($breakpoint-desktop){
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "desc img"
+    "form form";
+  }
+}
+
+.intro__img{
+
+  img {
+    width: 130%;
+    margin: 0.4rem 0 2.4rem 1.8rem;
+
+    @include mediaQuery($breakpoint-desktop){
+      grid-area: img;
+      width: 100%;
+      margin-left: 8rem;
+    }
+  }
+}
+
+.intro__description {
+  margin: 0 1rem;
+
+  @include mediaQuery($breakpoint-desktop){
+    grid-area: desc;
+    align-self: center;
+    text-align: left;
+    padding-left: 9rem;
+    width: 120%;
+  }
+
+  .intro__title {
+    color: $very-dark-blue;
+    font-size: 2.3rem;
+    line-height: 2.5rem;
+    margin-bottom: 0.6rem;
+
+    @include mediaQuery($breakpoint-desktop){
+      font-size: 4.2rem;
+      line-height: 5rem;
+      margin-bottom: 0;
+    }
+  }
+
+  p {
+    color: $grayish-violet;
+    font-size: 1rem;
+    line-height: 1.8rem;
+    margin-bottom: 1.4rem;
+
+    @include mediaQuery($breakpoint-desktop){
+      font-size: 1.2rem;
+      padding-right: 6rem;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.intro__form {
+  position: relative;
+  @include flexColumn;
+  gap: 1rem;
+  margin: 4.5rem 1.5rem 0;
+  padding: 1.3rem;
+  border-radius: 10px;
+  background-color: $dark-violet;
+  background-image: url(/images/bg-shorten-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: right 0;
+
+  @include mediaQuery($breakpoint-desktop){
+    grid-area: form;
+    flex-direction: row;
+    background-image: url(/images/bg-shorten-desktop.svg);
+    margin: 1rem 9.5rem;
+    height: 9.5rem;
+    padding: 3rem 3rem;
+    gap: 1.4rem;
+  }
+
+  .intro__input,
+  .btn {
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+  }
+
+  .btn {
+    @include mediaQuery($breakpoint-desktop){
+      width: 20%;
+    }
+  }
+}
+
+.intro__input {
+  border: 0;
+  font-family: inherit;
+  font-size: 0.9rem;
+
+  @include mediaQuery($breakpoint-desktop){
+    width: 78%;
+    font-size: 1.1rem;
+  }
+
+  &::placeholder {
+    color: $grayish-violet;
+  }
+
+  &.error {
+    border: 0.2rem solid $red;
+  }
+}
+
+.invalid-link {
+  display: none;
+  color: $red;
+  text-align: left;
+  font-size: 0.7rem;
+  margin-top: -0.80rem;
+
+  @include mediaQuery($breakpoint-desktop){
+    position: absolute;
+    margin-top: 3.8rem;
+    font-size: 0.9rem;
+  }
+}

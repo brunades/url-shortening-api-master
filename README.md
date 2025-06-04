@@ -1,6 +1,6 @@
 # Frontend Mentor - Shortly URL shortening API Challenge solution
 
-This is a solution to the [Shortly URL shortening API Challenge challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is my solution to the [Shortly URL shortening API Challenge challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G).
 
 ## Table of contents
 
@@ -11,6 +11,7 @@ This is a solution to the [Shortly URL shortening API Challenge challenge on Fro
 - [My process](#my-process)
   - [Built with](#built-with)
 - [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -27,14 +28,14 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/desktop-screenshot.png)
+![](./img/desktop-screenshot.png)
 
-![](./images/mobile-screenshot.png)
+![](./img/mobile-screenshot.png)
 
 ### Links
 
-- Solution URL: [https://github.com/brunades/url-shortening-api-master](https://github.com/brunades/url-shortening-api-master)
-- Live Site URL: [https://url-shortening-api-brunades.netlify.app/](https://url-shortening-api-brunades.netlify.app/)
+- Solution URL: [Github](https://github.com/brunades/url-shortening-api-master)
+- Live Site URL: [Netlify](https://url-shortening-api-brunades.netlify.app/)
 
 ## My process
 
@@ -50,3 +51,7 @@ Users should be able to:
 ## Author
 
 - Github - [brunades](https://github.com/brunades)
+- Frontend Mentor - [@brunades](https://www.frontendmentor.io/profile/brunades)
+
+## Acknowledgments
+Thanks to the Frontend Mentor community and Clean URI for the API. Special thanks to the browser dev tools for making debugging bearable!
